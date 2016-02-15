@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  get 'ask' => 'coaching#ask'
 
+
+
+  root 'coaching#ask'
+  get 'ask' => 'coaching#ask'
   get 'answer' => 'coaching#answer'
 
   # The priority is based upon order of creation: first created -> highest priority.
